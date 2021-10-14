@@ -1,0 +1,68 @@
+.main1 {
+    background-image: url('../assets/dark-low-poly.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+}
+
+.main1 .title {
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
+
+.experience1 {
+    border-style: solid;
+    width: 850px;
+    border-color: white;
+    background: white;
+    min-height: max-content;
+    color: black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 100px;
+    margin-bottom: 10vh;
+}
+
+h2.h2,
+h4,
+.experience1 span,
+p {
+    background: white;
+    z-index: 1;
+}
+
+.experience1 span {
+    font-weight: lighter;
+    color: grey;
+}
+
+.expeience1 button {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-left: 200px;
+}
+
+@media (max-width :850px) {
+    .experience1 {
+        max-width: 80vw;
+    }
+    .main1 .title {
+        font-size: 40px;
+    }
+    .main1 .experience1 .h2 {
+        font-size: 18px;
+    }
+    .main1 .experience1 h4 {
+        font-size: 15px;
+    }
+}

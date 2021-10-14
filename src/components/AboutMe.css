@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.aboutme {
+    background-color: black;
+    color: white;
+    height: fit-content;
+    padding: 10px;
+    background-image: url('../assets/dark-low-poly.jpg');
+    overflow: hidden;
+}
+
+.first-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-name {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.text-text {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 100px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+    align-self: center;
+}
+
+@keyframes anime {
+    from {
+        width: 2vw;
+    }
+    to {
+        width: 15vw;
+    }
+}
+
+.btns .btn {
+    border: 1px solid white;
+    width: 2vw;
+    height: 3vw;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.dn-txt {
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    font-size: 15px;
+}
+
+.btn-text,
+.btn-text1 {
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.btns .btn:hover {
+    animation: anime 0.1s linear 0s 1 forwards;
+    cursor: pointer;
+}
+
+.btn:hover+.btn-text {
+    transform: translateX(-130%);
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
+
+.btn:hover+.btn-text1 {
+    transform: translateX(-180%);
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
+
+.photo img {
+    width: 30vw;
+    height: 90vh;
+}
+
+.second-content {
+    background-color: black;
+    padding: 10px;
+    background-image: url('../assets/dark-low-poly.jpg');
+}
+
+.second-title {
+    font-size: 30px;
+    margin-bottom: 6vh;
+    margin-left: 7vw;
+}
+
+.video {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.video-text {
+    width: 40vw;
+    font-size: 20px;
+    border-left: 1px solid white;
+    height: fit-content;
+    padding-left: 50px;
+}
+
+@media (max-width:768px) {
+    .first-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .photo img {
+        width: 100vw;
+        margin: 0px 0px 0px 0px;
+    }
+}
