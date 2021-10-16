@@ -2,55 +2,41 @@ import React from 'react'
 import './Course.css'
 const Courses = () => {
     return (
-        <section className="courses">
-            <div className="title1" data-aos="flip-left">Courses</div>
-            <br />
+        <section className="main">
+            <div className="title" data-aos="flip-left">Courses</div>
+
             <div className="courses_container">
-                <div className="course" data-aos="fade-left">
+                <div className="course" data-aos="zoom-in">
                     <div className="course_image"></div>
                     <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
+                    <p><strong>Duration :</strong> 6 hrs.</p>
                 </div>
-                <div className="course" data-aos="fade-right">
+                <div className="course" data-aos="zoom-in">
                     <div className="course_image"></div>
                     <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
+                    <p ><strong>Duration :</strong> 6 hrs.</p>
                 </div>
-                <div className="course" data-aos="fade-left">
+                <div className="course" data-aos="zoom-in">
                     <div className="course_image"></div>
                     <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
+                    <p ><strong>Duration :</strong> 6 hrs.</p>
                 </div>
-                <div className="course" data-aos="fade-right">
+                <div className="course" data-aos="zoom-in">
                     <div className="course_image"></div>
                     <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
+                    <p ><strong>Duration :</strong> 6 hrs.</p>
                 </div>
-                <div className="course" data-aos="fade-left">
+                <div className="course" data-aos="zoom-in">
                     <div className="course_image"></div>
                     <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
+                    <p><strong>Duration :</strong> 6 hrs.</p>
                 </div>
-                <div className="course" data-aos="fade-right">
+                <div className="course cor1"  data-aos="zoom-in">
                     <div className="course_image"></div>
                     <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
+                    <p ><strong>Duration :</strong> 6 hrs.</p>
                 </div>
-                <div className="course" data-aos="fade-left">
-                    <div className="course_image"></div>
-                    <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
-                </div>
-                <div className="course" data-aos="fade-right">
-                    <div className="course_image"></div>
-                    <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
-                </div>
-                <div className="course" data-aos="fade-left">
-                    <div className="course_image"></div>
-                    <p>Complete Web Development Course</p>
-                    <p style={{ color: "rgb(150,150,150)", fontSize: "14px", textDecoration: "none" }}><strong>Duration :</strong> 6 hrs.</p>
-                </div>
+                
             </div>
             
         </section>

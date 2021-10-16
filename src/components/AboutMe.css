@@ -9,6 +9,8 @@
     height: fit-content;
     padding: 10px;
     background-image: url('../assets/dark-low-poly.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -36,82 +38,16 @@
     margin-bottom: 100px;
 }
 
-.btns {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 20px;
-    align-self: center;
-}
-
-@keyframes anime {
-    from {
-        width: 2vw;
-    }
-    to {
-        width: 15vw;
-    }
-}
-
-.btns .btn {
-    border: 1px solid white;
-    width: 2vw;
-    height: 3vw;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.dn-txt {
-    display: none;
-    text-transform: uppercase;
-    letter-spacing: 0.5vw;
-    font-size: 15px;
-}
-
-.btn-text,
-.btn-text1 {
-    text-transform: uppercase;
-    letter-spacing: 0.5vw;
-    font-size: 15px;
-    margin-left: 30px;
-}
-
-.btns .btn:hover {
-    animation: anime 0.1s linear 0s 1 forwards;
-    cursor: pointer;
-}
-
-.btn:hover+.btn-text {
-    transform: translateX(-130%);
-    text-decoration: underline;
-    text-decoration-color: aqua;
-    text-decoration-style: solid;
-    text-decoration-thickness: 5px;
-}
-
-.btn:hover+.btn-text1 {
-    transform: translateX(-180%);
-    text-decoration: underline;
-    text-decoration-color: aqua;
-    text-decoration-style: solid;
-    text-decoration-thickness: 5px;
-}
-
 .photo img {
     width: 30vw;
     height: 90vh;
 }
 
-.second-content {
-    background-color: black;
-    padding: 10px;
-    background-image: url('../assets/dark-low-poly.jpg');
-}
-
-.second-title {
+.second-title,
+.video-video video {
     font-size: 30px;
     margin-bottom: 6vh;
-    margin-left: 7vw;
+    margin-left: 5vw;
 }
 
 .video {
@@ -129,6 +65,9 @@
 }
 
 @media (max-width:768px) {
+    .text-name {
+        font-size: 40px;
+    }
     .first-content {
         display: flex;
         flex-direction: column-reverse;
@@ -136,5 +75,24 @@
     .photo img {
         width: 100vw;
         margin: 0px 0px 0px 0px;
+    }
+    .video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .video-video video {
+        width: 80vw;
+        height: 40vw;
+    }
+    .video-text {
+        width: 100%;
+        border: none;
+    }
+    .btn-text1 {
+        font-size: 40%;
+    }
+    .btn:hover+.btn-text1 {
+        transform: translateX(-20vw);
     }
 }

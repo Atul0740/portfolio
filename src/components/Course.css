@@ -1,15 +1,9 @@
-.courses {
-    min-height: 100vh;
-    background-image: url('../assets/dark-low-poly.jpg');
-    padding-left: 10px;
-}
-
 .courses_container {
     width: 100%;
     height: fit-content;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-flow: row;
     flex-wrap: wrap;
     padding: 20px;
@@ -22,9 +16,13 @@
     width: 500px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px white;
     margin: 20px;
     z-index: 10;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .course_image {
@@ -42,10 +40,16 @@
 }
 
 .course:hover {
-    box-shadow: 0px 10px 20px whitesmoke;
+    box-shadow: 2px 2px 2px 2px grey;
     transform: translateY(-10px) !important;
 }
 
 .course:hover .course_image {
     transform: scale(1.05) translateY(-2.5%);
+}
+
+@media(max-width:1120px) {
+    .cor1 {
+        margin-bottom: 200px;
+    }
 }
