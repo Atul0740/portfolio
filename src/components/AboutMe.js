@@ -14,16 +14,16 @@ const AboutMe = () => {
                         <p className="email" style={{ fontSize: "15px" }}>+91-9876543210</p>
                         <div className="icons">
                             <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-                                <i class="fab fa-facebook-square" style={{ fontSize: "50%" }}></i>
+                                <i class="fab fa-facebook-square text-white" style={{ fontSize: "50%" }}></i>
                             </a>
                             <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-                                <i class="fab fa-instagram" style={{ fontSize: "50%" }}></i></a>
+                                <i class="fab fa-instagram text-white" style={{ fontSize: "50%" }}></i></a>
                             <a href="https://www.twitte.com" target="_blank" rel="noreferrer">
-                                <i class="fab fa-twitter-square" style={{ fontSize: "50%" }}></i></a>
+                                <i class="fab fa-twitter-square text-white" style={{ fontSize: "50%" }}></i></a>
                             <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                                <i class="fab fa-linkedin" style={{ fontSize: "50%" }}></i></a>
+                                <i class="fab fa-linkedin text-white" style={{ fontSize: "50%" }}></i></a>
                             <a href="https://www.github.com" target="_blank" rel="noreferrer">
-                                <i class="fab fa-github-square" style={{ fontSize: "50%" }}></i></a>
+                                <i class="fab fa-github-square text-white" style={{ fontSize: "50%" }}></i></a>
                         </div>
                     </div>
 
