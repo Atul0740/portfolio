@@ -26,7 +26,7 @@ const Card = (props) => {
                 <span>{rows}{notrows}</span>
                 <br />
                 
-                <button class="div-btn">{props.buttonInfo}]</button>
+                <button class="div-btn">{props.buttonInfo}</button>
             </div>
     )
 }
