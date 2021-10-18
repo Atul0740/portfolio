@@ -34,6 +34,7 @@ const AboutMe = () => {
                     <img src={photo} alt="" />
                 </div>
             </div>
+            <br />
             <div className="second-content" data-aos="fade-up" data-aos-delay="500">
                 <div className="second-title"><u style={{ color: "aqua" }}> <span style={{ color: "white" }}> Expertise and Interests </span></u></div>
                 <div className='video'>

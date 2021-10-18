@@ -17,6 +17,7 @@
     background: #fff;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin-bottom: 20px
 }
 
 .skill-bars .bar {
@@ -151,9 +152,6 @@
 }
 
 @media (max-width:1024px) {
-    .skill-bars {
-        min-height: 80vh;
-    }
     .skill {
         margin: 0;
         padding: 0;

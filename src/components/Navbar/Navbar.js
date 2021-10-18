@@ -18,8 +18,8 @@ const Navbar = () => {
       "height": activeWidthNewAnimHeight + "px",
       "width": activeWidthNewAnimWidth + "px"
     });
-    $("#navbarSupportedContent").on("click", "li", function (e) {
-      $('#navbarSupportedContent ul li').removeClass("active");
+    $("#navbarSupportedContent").on("click", ".li", function (e) {
+      $('#navbarSupportedContent .ul .li').removeClass("active");
       $(this).addClass('active');
       var activeWidthNewAnimHeight = $(this).innerHeight();
       var activeWidthNewAnimWidth = $(this).innerWidth();
@@ -56,59 +56,59 @@ const Navbar = () => {
 
       <div
         className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
+        <div className="navbar-nav ml-auto ul dis">
 
           <div className="hori-selector">
             <div className="left"></div>
             <div className="right"></div>
           </div>
 
-          <li className="nav-item active">
+          <div className="nav-item active li">
             <NavLink className="nav-link" to="/" exact>
             <i class="fas fa-portrait"></i>Bio
             </NavLink>
-          </li>
-          <li className="nav-item">
+          </div>
+          <div className="nav-item li">
             <NavLink className="nav-link" to="/experiences" exact>
             <i class="fas fa-user-md"></i>Experience
             </NavLink>
-          </li>
-          <li>
+          </div>
+          <div className="nav-item li">
             <NavLink className="nav-link" to="/works" exact>
             <i class="fas fa-briefcase"></i>Works
             </NavLink>
-          </li>
-          <li className="nav-item">
+          </div>
+          <div className="nav-item li">
             <NavLink className="nav-link" to="/education" exact>
             <i class="fas fa-user-graduate"></i>Education
             </NavLink>
-          </li>
-          <li>
+          </div>
+          <div className="nav-item li">
             <NavLink className="nav-link" to="/courses" exact>
               <i
                 className="far fa-copy">
               </i>Courses
             </NavLink>
-          </li>
-          <li className="nav-item">
+          </div>
+          <div className="nav-item li">
             <NavLink className="nav-link" to="/achievements" exact>
             <i class="fas fa-trophy"></i>Achievments
             </NavLink>
 
-          </li>
-          <li className="nav-item">
+          </div>
+          <div className="nav-item li ">
             <NavLink className="nav-link" to="/skill" exact>
               <i
                 className="far fa-chart-bar">
               </i>Skills
             </NavLink>
-          </li>
+          </div>
 
 
 
 
 
-        </ul>
+        </div>
       </div>
     </nav>
   )

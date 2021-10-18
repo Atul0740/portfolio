@@ -3,7 +3,7 @@ import './Course.css'
 const Courses = () => {
     return (
         <section className="main">
-            <div className="title" data-aos="flip-left">Courses</div>
+            <div className="title" data-aos="flip-left" style={{marginBottom:"20px"}}>Courses</div>
 
             <div className="courses_container">
                 <div className="course" data-aos="zoom-in">

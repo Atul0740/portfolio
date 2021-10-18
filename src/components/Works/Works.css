@@ -31,18 +31,27 @@
     background-color: rgba(26, 25, 25, 0);
     color: white;
     width: 100%;
-    height: 200px;
     display: flex;
-    justify-content: flex-start;
-    overflow-x: scroll;
+    justify-content: space-around;
+    flex-wrap: wrap;
     scrollbar-width: 1px;
     overflow-y: hidden;
     align-items: center;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    padding: 50px;
 }
 
-.content :hover {
+.content {
+    margin: 20px 0px;
+}
+
+.content img:hover {
     transform: translateY(-10px) !important;
-    box-shadow: 5px 5px 5px 5px grey;
+}
+
+@media(max-width:650px) {
+    .content img {
+        width: 100%;
+    }
 }
