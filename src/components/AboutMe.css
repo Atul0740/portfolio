@@ -46,7 +46,7 @@
 
 .second-title,
 .video-video video {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 6vh;
     margin-left: 5vw;
     margin-top: 100px;
@@ -67,8 +67,12 @@
 }
 
 @media (max-width:768px) {
-    .text-name {
+    .text-name,
+    .second-title {
         font-size: 40px;
+    }
+    .second-title {
+        margin-bottom: 2px;
     }
     .first-content {
         display: flex;

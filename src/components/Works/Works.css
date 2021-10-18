@@ -41,17 +41,3 @@
     border-top: 1px solid black;
     padding: 50px;
 }
-
-.content {
-    margin: 20px 0px;
-}
-
-.content img:hover {
-    transform: translateY(-10px) !important;
-}
-
-@media(max-width:650px) {
-    .content img {
-        width: 100%;
-    }
-}

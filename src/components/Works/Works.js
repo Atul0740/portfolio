@@ -7,7 +7,6 @@ import './Works.css'
 
 
 
-
 const Works = () => {
   const [clicked, setClicked] = useState(false);
 
@@ -34,10 +33,8 @@ const Works = () => {
                 </div>
                 {clicked === index ? (
                   <div className="Dropdown">
-                    <span className="content">{item.answer}</span>
-                    <span className="content">{item.answer}</span>
-                    <span className="content">{item.answer}</span>
-                    <span className="content">{item.answer}</span>
+                    {item.answer}
+                    
                   </div>
                 ) : null}
               </>

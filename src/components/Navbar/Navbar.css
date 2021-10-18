@@ -22,7 +22,7 @@ i {
 .dis {
     width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #navbarSupportedContent .ul {

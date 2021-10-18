@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 
 const Education = () => {
-   const style = { marginBottom: "250px"};
+   const style = { marginBottom: "300px"};
    return (
 
       <div class="main">

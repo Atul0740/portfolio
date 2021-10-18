@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Card'
 const Achievements = () => {
-    const style = { marginBottom: "250px"};
+    const style = { marginBottom: "300px"};
     return (
         <div class="main" >
            <h2 class="title" data-aos="flip-right">Achievements</h2>

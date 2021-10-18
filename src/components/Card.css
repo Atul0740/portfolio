@@ -26,6 +26,21 @@
     padding: 10px;
 }
 
+.div-btn {
+    box-shadow: inset 0px 0px 0px white;
+    transition: all 0.5s !important;
+}
+
+.div-btn:hover {
+    box-shadow: inset 0px -80px 0px white;
+    color: black;
+}
+
+.experience1:hover {
+    box-shadow: 2px 2px 2px 2px grey;
+    transform: translateY(-20px) !important;
+}
+
 @media (max-width:850px) {
     .experience1 {
         width: 100vw;

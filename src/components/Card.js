@@ -24,8 +24,7 @@ const Card = (props) => {
                     {props.desc}
                 </p>
                 <span>{rows}{notrows}</span>
-                <br />
-                
+                <p></p>
                 <button class="div-btn">{props.buttonInfo}</button>
             </div>
     )
