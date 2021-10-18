@@ -16,8 +16,7 @@ const Card = (props) => {
     
 
     return (
-        <div>
-            <div class="experience1" data-aos="zoom-in" data-aos-delay="100">
+            <div class="experience1" data-aos="zoom-in" style={props.style} >
                 <h2 class="h2">{props.desg}</h2>
                 <h4>{props.company}</h4>
                 <span>{props.date}</span>
@@ -29,7 +28,6 @@ const Card = (props) => {
                 
                 <button class="div-btn">{props.buttonInfo}]</button>
             </div>
-        </div>
     )
 }
 
