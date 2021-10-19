@@ -6,7 +6,7 @@ export const Data = [{
         <CourseCard imgsrc={photo} title="Complete Web Development Course" type="work" link="https://www.facebook.com" />,
         <CourseCard imgsrc={photo} title="Complete Web Development Course Series" type="work" link="https://www.facebook.com" />,
         <CourseCard imgsrc={photo} title="Complete Web Development Course Series" type="work" link="https://www.facebook.com" />,
-        <CourseCard imgsrc={photo} title="Complete Web Development Course Series" type="work" link="https://www.facebook.com" />,
+        <CourseCard imgsrc={photo} title="Complete Web Development Course Series" type="work" link="https://www.twitter.com" />,
         <CourseCard imgsrc={photo} title="Complete Web Development Course Series" type="work" link="https://www.facebook.com" />,
         <CourseCard imgsrc={photo} title="Complete Web Development Course Series" type="work" link="https://www.facebook.com" />
     ]

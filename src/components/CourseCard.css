@@ -3,14 +3,13 @@
     width: 500px;
     border-radius: 10px;
     overflow: hidden;
-    margin: 20px;
+    margin-bottom: 20px;
     z-index: 10;
     background-color: rgb(44, 44, 44);
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .course_image {
@@ -48,5 +47,6 @@
     .course {
         width: 80vw;
         font-size: 18px;
+        margin-right: 0px;
     }
 }

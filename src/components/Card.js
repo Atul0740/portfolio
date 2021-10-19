@@ -1,9 +1,13 @@
 import React from 'react'
 import './Card.css'
+import {motion} from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useAnimation } from 'framer-motion'
+import { useEffect } from 'react'
 const Card = (props) => {
     let rows = [];
     let notrows=[];
-    console.log(props.isstars);
+    
     if(props.isstars==="1")
     {
         for (let i = 0; i < props.stars; i++) {
@@ -14,9 +18,31 @@ const Card = (props) => {
         }
     }
     
+    const {ref,inView}=useInView();
+    const animation = useAnimation();
+    useEffect(()=>{
+        if(inView )
+        {
+            animation.start({
+                x:0,
+                transition :{
+                    duration:0.1,
+                }
+            })
+            
+        }
+        if(!inView)
+        {
+            animation.start({
+                x:'-100vw'
+            })
+        }
+
+    },[inView,animation])
 
     return (
-            <div class="experience1" data-aos="zoom-in" style={props.style} >
+        <div ref={ref}>
+            <motion.div class="experience1"  style={props.style} animate={animation} data-aos="fade-up">
                 <h2 class="h2">{props.desg}</h2>
                 <h4>{props.company}</h4>
                 <span>{props.date}</span>
@@ -26,6 +52,7 @@ const Card = (props) => {
                 <span>{rows}{notrows}</span>
                 <p></p>
                 <button class="div-btn">{props.buttonInfo}</button>
+            </motion.div>
             </div>
     )
 }
