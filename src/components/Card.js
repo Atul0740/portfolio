@@ -4,7 +4,34 @@ import {motion} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Card = (props) => {
+    AOS.init({
+        disable: function () {
+          var maxWidth = 800;
+          return window.innerWidth < maxWidth;
+        }
+        });
+    // $(document).ready( function() {
+    //     /* Check width on page load*/
+    //     if ( $(window).width() > 991) {
+    //      $('.experience1').attr('data-aos', 'fade-up');
+    //      $('.experience1').attr('data-aos-once', 'true');
+    //     }
+        
+        
+    //  });
+    
+    //  $(window).resize(function() {
+    //     /*If browser resized, check width again */
+    //     if ( $(window).width() > 991) {
+    //       $('.experience1').attr('data-aos', 'fade-up');
+    //       $('.experience1').attr('data-aos-once', 'true');
+     
+    //      }
+         
+    //  });
     let rows = [];
     let notrows=[];
     
@@ -18,7 +45,9 @@ const Card = (props) => {
         }
     }
     
-    const {ref,inView}=useInView();
+    const {ref,inView}=useInView({
+        threshold:0.4
+    });
     const animation = useAnimation();
     useEffect(()=>{
         if(inView )
@@ -26,7 +55,9 @@ const Card = (props) => {
             animation.start({
                 x:0,
                 transition :{
-                    duration:0.1,
+                    duration:1,
+                    type:"spring",
+                    bounce:"0.5"
                 }
             })
             
@@ -41,8 +72,8 @@ const Card = (props) => {
     },[inView,animation])
 
     return (
-        <div ref={ref}>
-            <motion.div class="experience1"  style={props.style} animate={animation} data-aos="fade-up">
+        <div ref={ref} style={{overflow:"hidden"}}>
+            <motion.div class="experience1"  style={props.style} animate={animation} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <h2 class="h2">{props.desg}</h2>
                 <h4>{props.company}</h4>
                 <span>{props.date}</span>

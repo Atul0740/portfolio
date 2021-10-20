@@ -4,7 +4,7 @@ const Achievements = () => {
     const style = { marginBottom: "300px"};
     return (
         <div class="main" >
-           <h2 class="title" data-aos="flip-right">Achievements</h2>
+           <h2 class="title" data-aos="flip-right" data-aos-once="true">Achievements</h2>
            <Card desg="UX Designer" company="Apple" date="Apr 2020 - May 2020" desc="" isstars="0" stars="" buttonInfo="View Certification" />
            <Card desg="UX Designer" company="Apple" date="Apr 2020 - May 2020" desc="" isstars="0" stars="" buttonInfo="View Certification" style={style}/>
         </div>

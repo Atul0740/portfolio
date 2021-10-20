@@ -6,7 +6,7 @@ const Courses = () => {
     const style={marginBottom:"300px"}
     return (
         <section className="main">
-            <div className="title" data-aos="flip-left" style={{ marginBottom: "20px" }}>Courses</div>
+            <div className="title" data-aos="flip-left" style={{ marginBottom: "20px" }} data-aos-once="true">Courses</div>
 
             <div className="courses_container">
                 

@@ -57,7 +57,7 @@ const AboutMe = () => {
                     <div className="text-text" data-aos="fade-up" data-aos-once="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolorum dignissimos labore odit, accusantium ea voluptatum assumenda, perspiciatis eveniet a nam, nesciunt perferendis dolore natus repudiandae libero? Distinctio, possimus. Quidem.</div>
                     <button className="div-btn" data-aos="fade-up" data-aos-once="true">Download CV</button>
                 </div>
-                <div className="photo" data-aos="fade-up">
+                <div className="photo" data-aos="fade-up" data-aos-once="true">
                     <img src={photo} alt="" />
                 </div>
             </div>

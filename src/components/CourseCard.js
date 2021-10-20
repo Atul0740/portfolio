@@ -6,7 +6,7 @@ const CourseCard = (props) => {
     
     return (
         <a href={props.link} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-            <div className="course" data-aos="zoom-in" data-aos-once="true">
+            <div className="course" data-aos="zoom-in" data-aos-once="true" data-aos-anchor-placement="top-bottom">
 
                 <div className="course_image" style={{ backgroundImage: `url(${props.imgsrc})` }} ></div>
                 <Tippy content={props.title}>

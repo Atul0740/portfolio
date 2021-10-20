@@ -22,7 +22,7 @@ const Works = () => {
   return (
     <IconContext.Provider value={{ color: 'white', size: '25px' }}>
       <div className='skill'>
-      <div className="title" data-aos="flip-right">My Works</div>
+      <div className="title" data-aos="flip-right" data-aos-once="true">My Works</div>
         <div className="Container" data-aos="fade-left" data-aos-once="true">
           {Data.map((item, index) => {
             return (

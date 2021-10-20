@@ -14,6 +14,7 @@ import Works from './components/Works/Works'
 
 const App = () => {
   AOS.init({
+    
    
     offset: 120,
     duration: 400,

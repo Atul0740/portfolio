@@ -9,7 +9,10 @@ const Navbar = () => {
     if ( $(window).width() < 991) {
      $('.coll').addClass('collapse');
      $('.coll').attr('id', 'navbarSupportedContent');
-
+    }
+    else{
+      $('.coll').removeClass('collapse');
+      $('.coll').removeAttr('id');
     }
     
  });
@@ -21,6 +24,10 @@ const Navbar = () => {
       $('.coll').attr('id', 'navbarSupportedContent');
  
      }
+     else{
+      $('.coll').removeClass('collapse');
+      $('.coll').removeAttr('id');
+    }
  });
 
   function animation() {
