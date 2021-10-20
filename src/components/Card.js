@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 const Card = (props) => {
     AOS.init({
         disable: function () {
-          var maxWidth = 800;
+          var maxWidth = 991;
           return window.innerWidth < maxWidth;
         }
         });
@@ -46,7 +46,7 @@ const Card = (props) => {
     }
     
     const {ref,inView}=useInView({
-        threshold:0.4
+        threshold:0.1
     });
     const animation = useAnimation();
     useEffect(()=>{
@@ -57,7 +57,7 @@ const Card = (props) => {
                 transition :{
                     duration:0.1,
                     type:"spring",
-                    
+                    bounce:0
                 }
             })
             
