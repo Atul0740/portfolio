@@ -55,9 +55,9 @@ const Card = (props) => {
             animation.start({
                 x:0,
                 transition :{
-                    duration:1,
+                    duration:0.1,
                     type:"spring",
-                    bounce:"0.5"
+                    
                 }
             })
             
@@ -72,7 +72,7 @@ const Card = (props) => {
     },[inView,animation])
 
     return (
-        <div ref={ref} style={{overflow:"hidden"}}>
+        <div ref={ref} >
             <motion.div class="experience1"  style={props.style} animate={animation} data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <h2 class="h2">{props.desg}</h2>
                 <h4>{props.company}</h4>
